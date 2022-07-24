@@ -1,0 +1,147 @@
+body{
+    font-style: normal;
+    background-color: #64af41;
+    margin-left: 10px;
+}
+nav{
+    top: 0;
+    width:100%;
+}
+.nav-container{
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    background-color: rgb(14, 90, 71);
+    color:black;
+    text-decoration: solid;
+    margin-top: -25px;  
+    height: 110px;
+    padding-top: -10px;
+}
+fieldset{
+    border: 3px solid black;
+}
+.mad{
+    position: relative;
+}
+.form{
+    
+    font-size: 20px;
+    line-height: 80px;
+    margin-top: 2px;
+    margin-right:500px;
+    margin-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;    
+}
+table{
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.first{
+    font-size: 20px;
+    height: 500px;
+    width: 800px;
+}
+
+input[type =text]{
+    padding: 5px;
+    font-size: 15px;
+}
+input[type =alphanumeric]{
+    padding: 5px;
+    font-size: 15px;
+}
+input[type =date]{
+    padding: 5px;
+    font-size: 15px;
+}
+input[type =numeric]{
+    padding: 5px;
+    font-size: 15px;
+}
+.edu{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.hobbies{
+    margin-top: 25px;
+    margin-bottom: 80px;
+    font-size: 20px;
+}
+.skills{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.key{
+    margin-left: 0%;
+    margin-bottom: 20%;
+    display: inline;
+    /* padding-top: 200px; */
+    padding-left: 500px;
+    height: 30px;
+    width: 120px;
+    /* border-color: rgb(14, 13, 13); */
+    /* background-color: rgb(15, 14, 14); */
+
+}
+.Employment{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.sss-table-tr-td{
+    padding: 100px;
+}
+
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: #222;
+}
+
+.profile-pic-div {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 28%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid grey;
+}
+
+#photo {
+    height: 100%;
+    width: 100%;
+}
+
+#file {
+    display: none;
+}
+
+#uploadBtn {
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: wheat;
+    line-height: 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+

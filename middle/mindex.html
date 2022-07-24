@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input Image</title>
+    <link rel="stylesheet" type="text/css" href="mstyle.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css" media="print">
+      .no-print {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form onsubmit="myfunc()" class="mad">
+      <nav>
+        <div class="nav-container">
+          <p>Curriculum Vitae</p>
+        </div>
+      </nav>
+      <br />
+      <br />
+      <div class="form"></div>
+
+      <fieldset height="800px" width="2000px">
+        <legend style="text-transform: uppercase; font-size: 20px">
+          <b>Personal Details</b>
+        </legend>
+        <div class="sss">
+          <table class="first" border="0">
+            <tr>
+              <td>Name</td>
+              <td colspan="4"><input type="text" name="name" value="" /></td>
+            </tr>
+            <tr>
+              <td>Father's Name</td>
+              <td colspan="4"><input type="text" name="name" value="" /></td>
+              <td>
+                <div class="img">
+                  <div class="profile-pic-div">
+                    <img src="./image.jpg" id="photo" />
+                    <input type="file" id="file" />
+                    <label for="file" id="uploadBtn">Choose Photo</label>
+                    <h1>Upload Photo</h1>
+                  </div>
+                  <!-- <script src="index.js"></script> -->
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Mother's Name</td>
+              <td colspan="4"><input type="text" name="name" value="" /></td>
+            </tr>
+            <tr>
+              <td>Date of Birth</td>
+              <td colspan="4"><input type="date" name="date" value="" /></td>
+            </tr>
+            <tr>
+              <td>Gmail</td>
+              <td colspan="4">
+                <input type="alphanumeric" name="name" value="" />
+              </td>
+            </tr>
+            <tr>
+              <td>Mobile No.</td>
+              <td colspan="4">
+                <input type="Numeric" name="numeric" value="" />
+              </td>
+            </tr>
+            <tr>
+              <td>Address</td>
+              <td colspan="4">
+                <input type="alphanumeric" name="name" value="" />
+              </td>
+            </tr>
+            <tr>
+              <td>Gender</td>
+              <td colspan="2">
+                <input type="checkbox" name="gender" value="Male" />Male
+              </td>
+              <td colspan="2">
+                <input type="checkbox" name="gender" value="Male" />Female
+              </td>
+            </tr>
+            <tr>
+              <td>Caste</td>
+              <td>
+                <input type="checkbox" name="caste" value="Male" />General
+              </td>
+              <td><input type="checkbox" name="caste" value="Male" />OBC</td>
+              <td><input type="checkbox" name="caste" value="Male" />SC</td>
+              <td><input type="checkbox" name="caste" value="Male" />ST</td>
+            </tr>
+          </table>
+        </div>
+      </fieldset>
+      <div id="educations"></div>
+      <div class="d-flex p-3">
+        <button
+          class="d-flex border items-center justify-center rounded-button cursor-pointer relative box-content transition-colors duration-150 overflow-hidden max-w-full focus-visible:ring-4 ring-brand bg-transparent active:bg-brand-100 not-touch:active:bg-brand-100 text-gray-700 border-gray-400 not-touch:hover:bg-brand-50 not-touch:hover:border-brand-400 font-medium py-1 ps-1 pe-3 text-base"
+          type="button"
+          style="outline: none"
+          onclick="addEducation()"
+        >
+          <!-- Its for add sign
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="2 2 16 16"
+            fill="currentColor"
+            class="px-0.5 flex-shrink-0 box-content h-6 w-5"
+            width="30"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10 5a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3H6a1 1 0 1 1 0-2h3V6a1 1 0 0 1 1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg> -->
+          <div class="truncate h-6 ms-0.5">Add Education</div>
+        </button>
+      </div>
+      <div class="Employment">
+        <fieldset width="2000px">
+          <legend style="text-transform: uppercase; font-size: 20px">
+            <b>Employment</b>
+          </legend>
+          <table width="100%" border="0">
+            <tr>
+              <td>Company Name <input type="text" name="name" value="" /></td>
+              <td>Post</td>
+              <td><input type="text" name="name" value="" /></td>
+              <td>Period</td>
+              <td>
+                <input type="date" name="name" value="" /> To
+                <input type="date" name="name" value="" />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <div id="employments"></div>
+      <div class="d-flex p-3">
+        <button
+          class="d-flex border items-center justify-center rounded-button cursor-pointer relative box-content transition-colors duration-150 overflow-hidden max-w-full focus-visible:ring-4 ring-brand bg-transparent active:bg-brand-100 not-touch:active:bg-brand-100 text-gray-700 border-gray-400 not-touch:hover:bg-brand-50 not-touch:hover:border-brand-400 font-medium py-1 ps-1 pe-3 text-base"
+          type="button"
+          style="outline: none"
+          onclick="addEmployment()">
+          <div class="truncate h-6 ms-0.5">Add Emplyoment</div>
+        </button>
+      </div>
+      <div class="skills">
+        <fieldset width="2000px">
+          <legend style="text-transform: uppercase; font-size: 20px">
+            <b>Skills</b>
+          </legend>
+          <b>Description..</b><br />
+          <textarea rows="5" cols="80"> </textarea>
+        </fieldset>
+      </div>
+      <div class="hobbies">
+        <fieldset width="2000px">
+          <legend style="text-transform: uppercase; font-size: 20px">
+            <b>Hobbies</b>
+          </legend>
+          <b>Description..</b><br />
+          <textarea rows="5" cols="80"> </textarea>
+        </fieldset>
+      </div>
+      <div></div>
+      <div class="key no-print">
+        <input
+          type="reset"
+          value="RESET"
+        />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input
+          type="button"
+          onclick="Hello();"
+          name="YES"
+          value="CONFIRM"
+        />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input
+          type="submit"
+          onclick="window.print()"
+          name="submit"
+          value="SUBMIT"
+        />
+      </div>
+    </form>
+    <!-- <button class="inline-flex border items-center justify-center rounded-button cursor-pointer relative box-content transition-colors duration-150 overflow-hidden max-w-full focus-visible:ring-4 ring-brand bg-transparent active:bg-brand-100 not-touch:active:bg-brand-100 text-gray-700 border-gray-400 not-touch:hover:bg-brand-50 not-touch:hover:border-brand-400 font-medium py-1 ps-1 pe-3 text-base" type="button" style="outline: none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="2 2 16 16" fill="currentColor" class="px-0.5 flex-shrink-0 box-content h-6 w-5"><path fill-rule="evenodd" d="M10 5a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3H6a1 1 0 1 1 0-2h3V6a1 1 0 0 1 1-1z" clip-rule="evenodd"></path></svg><div class="truncate h-6 ms-0.5 ">Add education</div></button> -->
+    <script type="text/JavaScript">
+        function addEducation() {
+            const div = document.createElement("div");
+            div.className = 'edu';
+            div.innerHTML = `<fieldset width="2000px">
+          <legend style="text-transform: uppercase; font-size: 20px">
+            <b>Education</b>
+          </legend>
+          <table width="100%">
+            <tr>
+              <td>
+                Board/University
+                <select name="dropdown">
+                  <option value="select">Select</option>
+                  <option value="UP Board">UP Board</option>
+                  <option value="CBSE">CBSE</option>
+                  <option value="ICSE">ICSE</option>
+                  <option value="Other">Other</option>
+                </select>
+              </td>
+              <td>Level <input type="text" name="level" value="" /></td>
+              <td>Passing Year<input type="numeric" name="year" value="" /></td>
+              <td>Roll No.<input type="numeric" name="roll" value="" /></td>
+            </tr>
+          </table>
+        </fieldset>`;
+            document.getElementById('educations').appendChild(div);
+        }
+        function addEmployment() {
+            const div = document.createElement("div");
+            div.className = 'emp';
+            div.innerHTML = `<fieldset width="2000px">
+          <legend style="text-transform: uppercase; font-size: 20px">
+            <b>Employment</b>
+          </legend>
+          <table width="100%" border="0">
+            <tr>
+              <td>Company Name <input type="text" name="name" value="" /></td>
+              <td>Post</td>
+              <td><input type="text" name="name" value="" /></td>
+              <td>Period</td>
+              <td>
+                <input type="date" name="name" value="" /> To
+                <input type="date" name="name" value="" />
+              </td>
+            </tr>
+          </table>
+        </fieldset>`;
+            document.getElementById('employments').appendChild(div);
+        }
+
+
+        addEducation()
+              function Hello(){
+               alert("All fileds are correct that filled by me, Confirm");
+              };
+             /* function addSkill() {
+                  const div = document.createElement("div");
+                  div.innerHTML = `<h1>This is my Skill</h1><p>SSS</p>`
+                  document.querySelector(".hobbies").appendChild(div)
+              }*/
+
+
+      const imgDiv = document.querySelector('.profile-pic-div');
+      const img = document.querySelector('#photo');
+      const file = document.querySelector('#file');
+      const uploadBtn = document.querySelector('#uploadBtn');
+
+      imgDiv.addEventListener('mouseenter', function() {
+          uploadBtn.style.display = 'block';
+      });
+
+      imgDiv.addEventListener('mouseleave', function() {
+          uploadBtn.style.display = 'none';
+      });
+
+      file.addEventListener('change', function() {
+          const choosedFile = this.files[0];
+
+          if (choosedFile) {
+              const reader = new FileReader();
+
+              reader.addEventListener('load', function() {
+                  img.setAttribute('src', reader.result);
+              });
+
+              reader.readAsDataURL(choosedFile);
+          }
+      });
+    </script>
+  </body>
+</html>

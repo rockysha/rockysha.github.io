@@ -78,8 +78,8 @@ input[type =numeric]{
     font-size: 20px;
 }
 .key{
-    margin-left: 0%;
-    margin-bottom: 20%;
+    margin-left: 10px;
+    margin-bottom: 100px;
     display: inline;
     /* padding-top: 200px; */
     padding-left: 500px;
@@ -143,5 +143,7 @@ h1 {
     cursor: pointer;
     display: none;
 }
-
+.btn{
+    margin-bottom: 50px;
+}
 

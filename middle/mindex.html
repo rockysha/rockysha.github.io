@@ -13,7 +13,7 @@
     </style>
   </head>
   <body>
-    <form onsubmit="myfunc()" class="mad">
+    <form onsubmit="myfunc()" class="mad" onreset="onReset()">
       <nav>
         <div class="nav-container">
           <p>Curriculum Vitae</p>
@@ -263,6 +263,11 @@
       imgDiv.addEventListener('mouseleave', function() {
           uploadBtn.style.display = 'none';
       });
+
+      const onReset = () => {
+        img.src = "./image.jpg";
+        file.value = ""
+      }
 
       file.addEventListener('change', function() {
           const choosedFile = this.files[0];
